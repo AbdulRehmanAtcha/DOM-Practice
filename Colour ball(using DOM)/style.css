@@ -1,0 +1,173 @@
+
+body{
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(107, 105, 105), rgb(95, 94, 94));
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    height: 250px;
+    width: 200px;
+    background-color: rgb(238, 237, 237);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    flex-direction: column;
+}
+.mid{
+    height: 500px;
+    width: 600px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.right{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(238, 237, 237);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    flex-direction: column;
+}
+.line1, .line2, .line3, .line4, .line5{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.ball, .ball2, .ball3, .ball4, .ball5{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+.right p , .left p{
+    font-size: 55px;
+    position: relative;
+    bottom: 30px;
+}
+.left h2 , .right h2{
+    position: relative;
+    top: 50px;
+}
+@media screen and (min-width:371px) and (max-width:750px){
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        height: 100px;
+        width: 200px;
+        position: relative;
+        right: 5%;
+        font-size: 10px;
+    }
+    .left h2{
+        position: relative;
+        top: 60px;
+        font-size: 29px;
+    }
+    .mid{
+        height: 400px;
+        width: 90%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+        /* visibility: ; */
+    }
+    .ball, .ball2, .ball3, .ball4, .ball5{
+        height: 50px;
+        width: 50px;
+        /* transition: visibility 3s ease-in-out; */
+    }
+    .right{
+        height: 90px;
+        width: 200px;
+        position: relative;
+        bottom: 35px;
+    }
+    .right h2{
+        position: relative;
+        top: 60px;
+        font-size: 29px;
+    }
+    .right p{
+        position: relative;
+        bottom: 15px;
+    }
+}
+@media screen and (min-width:751px) and (max-width:1024px){
+    .container{
+        flex-direction: column;
+    }
+    .right{
+        height: 150px;
+        width: 400px;
+        position: relative;
+        bottom: 40px;
+    }
+    .right h2{
+        font-size: 50px;
+        position: relative;
+        top: 50px;
+    }
+    .left h2{
+        font-size: 50px;
+        position: relative;
+        top: 50px;
+    }
+    .right p , .left p{
+        font-size: 55px;
+        position: relative;
+        bottom: 40px;
+    }
+    .left{
+        height: 150px;
+        width: 400px;
+        position: relative;
+        /* bottom: 40px; */
+    }
+}
+@media screen and (min-width:100px) and (max-width:370px) {
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        height: 86px;
+        width: 146px;
+        /* bottom: 40px; */
+    }
+    .right{
+        height: 96px;
+        width: 146px;
+        margin-bottom: 40px;
+    }
+    .left h2 , .right h2{
+        font-size: 21px;
+        margin-bottom: 50px;
+    }
+    .left p , .right p{
+        margin-bottom: 44px;
+        font-size: 26px;
+    }
+    .mid{
+        margin-right: 18px;
+        height: 300px;
+        width: 261px;
+        margin-bottom: 37px;
+    }
+    .ball, .ball2, .ball3, .ball4, .ball5{
+        height: 30px;
+        width: 30px;
+    }
+}
